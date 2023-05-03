@@ -129,28 +129,29 @@
         <div class="d-flex gap-lg-3 gap-3 mx-3 justify-content-around position-relative" >
             <!--column1 -->
             <div class="col-lg-2 col-md-4 col-sm-4 fs-4 d-sm-block d-none   bg-white " style=" font-family:'Teko','sans-serif'; ">
-                <div id="list-example" class="list-group position-sticky my-auto border border-3 border-primary "id="code" style="top:90px;border-style:outset">
-                    <a class="list-group-item  list-group-item-action text-dark my-2 border-0 check" onclick="click()" href="#overview">Overview</a>
-                    <a class="list-group-item list-group-item-action text-dark my-2 border-0 check "  onclick="click()" href="#service">Service</a>
-                    <a class="list-group-item list-group-item-action text-dark my-2 border-0 check "  onclick="click()" href="#faq">FAQ</a>
+                <div id="list-example" class="list-group position-sticky my-auto border border-3 border-primary "style="top:90px;border-style:outset">
+                    <a class="list-group-item  list-group-item-action text-dark my-2 border-0 check customa_active"  href="#overview">Overview</a>
+                    <a class="list-group-item list-group-item-action text-dark my-2 border-0 check"   href="#service">Service</a>
+                    <a class="list-group-item list-group-item-action text-dark my-2 border-0 check" href="#faq">FAQ</a>
                     <a class="list-group-item list-group-item-action text-dark my-2 border-0  check"
                         href="#requirement">Requirement</a>
-                    <a class="list-group-item list-group-item-action text-dark my-2 border-0  check "  onclick="click()" href="#duration">Duration</a>
-                    <a class="list-group-item list-group-item-action text-dark my-2 border-0  check"   onclick="click()"href="#renewal">Renewal</a>
+                    <a class="list-group-item list-group-item-action text-dark my-2 border-0  check"   href="#duration">Duration</a>
+                    <!-- <a class="list-group-item list-group-item-action text-dark my-2 border-0  check" href="#renewal">Renewal</a> -->
                 </div>
             </div>
             <script>
-               
-                var x = document.getElementsByClassName("check");
+               var header = document.getElementById("list-example");
+                var x = header.getElementsByClassName("check");
                 
                 for (var i = 0; i < x.length; i++) {
-                   
-                       x[i].addEventListener("click", function() {
-                        console.log(x[i]);
-                        var current = document.getElementsByClassName("active");
-                        current[0].className = current[0].className.replace(" active", "");
+                    
+                    x[i].addEventListener("click", function() {
                         
-                    this.className += " active";
+                        x[0].classList.remove("customa_active");
+                        var current = document.getElementsByClassName("active");
+                        current[0].className = current[0].className.replaceAll(" active", "");
+                        this.className += " active";
+                      
                     });
                 }
                 
