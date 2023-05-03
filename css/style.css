@@ -159,7 +159,9 @@ h6,
         opacity: 1;
     }
 }
-
+.bodyback{
+    background-image: url(../img/bodybg.png);
+}
 
 /*** Header ***/
 .owl-carousel-inner {
