@@ -17,9 +17,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Teko:wght@400;500;600&display=swap" rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+     integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
     <!-- Libraries Stylesheet -->
     <link href="lib/animate/animate.min.css" rel="stylesheet">
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
@@ -33,13 +34,6 @@
 </head>
 
 <body>
-    <!-- Spinner Start -->
-    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <div class="spinner-border position-relative text-primary" style="width: 6rem; height: 6rem;" role="status"></div>
-        <img class="position-absolute top-50 start-50 translate-middle" src="img/iconssd/icon-1.png" alt="Icon">
-    </div>
-    <!-- Spinner End -->
-
 
     <!-- Topbar Start -->
     <div class="container-fluid bg-dark p-0 wow fadeIn" data-wow-delay="0.1s">
@@ -83,12 +77,13 @@
 
 
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-dark text-white navbar-light sticky-top py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+    <nav class="navbar navbar-expand-lg bg-dark text-white navbar-light sticky-top py-lg-0 px-lg-5>
         <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
-            <h1 class="m-0"><img class="me-1  position-sticky rounded-circle" src="img/images-120x1203.png" width="60" height="60"  alt="Icon"><span class="text-white">White</span><span class="text-primary">Worth</span></h1>
+            <h1 class="m-0 d-flex flex-row"><img class="me-1  position-sticky rounded-circle" src="img/logo120.png.png" width="80" height="80" loading="lazy" alt="Icon">
+                <span class="mt-4"><span class="text-white">White</span><span class="text-primary">Worth</span></span></h1>
         </a>
-        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
+        <button type="button" class="navbar-toggler me-4" aria-label="hamburger" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="fa fa-bars text-white"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
@@ -116,45 +111,45 @@
 
 
     <!-- Carousel Start -->
-    <div class="container-fluid p-0 pb-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container-fluid p-0 pb-5 d-xs-none d-none d-sm-block wow fadeIn" data-wow-delay="0.1s">
         <div class="owl-carousel header-carousel position-relative">
-            <div class="owl-carousel-item position-relative" data-dot="<img src='img/carousel-1.jpg'>">
-                <img class="img-fluid" src="img/carousel-2 (2).jpg" alt="">
-                <div class="owl-carousel-inner">
+            <div class="owl-carousel-item position-relative bg-dark" data-dot="<img src='img/intro.webp' alt=''>">
+                <img class="img-fluid mw-100 " src="img/intro.webp" alt="">
+                <div class="owl-carousel-inner ">
                     <div class="container">
                         <div class="row justify-content-start">
                             <div class="col-10 col-lg-8">
                                 <h1 class="display-1 text-white animated slideInDown">Nuture Your  <br>
                                     Company GRowth</h1>
                                 
-                                <a href="" class="btn btn-primary py-3 px-5 animated slideInLeft">Read More</a>
+                                <a href="#"  aria-label="More to know" class="btn btn-primary py-3 px-5 w-auto h-auto animated slideInLeft" >Read More</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="owl-carousel-item position-relative" data-dot="<img src='img/carousel-2.jpg'>">
-                <img class="img-fluid" src="img/corporate-image-copyright-21.jpg" alt="">
-                <div class="owl-carousel-inner">
+            <div class="owl-carousel-item position-relative  bg-dark" data-dot="<img src='img/slider-img.webp'alt=''>">
+                <img class="img-fluid mw-100 " src="img/slider-img.webp"  alt="">
+                <div class="owl-carousel-inner ">
                     <div class="container">
                         <div class="row justify-content-start">
                             <div class="col-10 col-lg-8">
                                 <h1 class="display-1 text-white animated slideInDown">The Best Solution for your Business</h1>
                                 
-                                <a href="" class="btn btn-primary py-3 px-5 animated slideInLeft">Read More</a>
+                                <a  href="#"  aria-label="More to know"class="btn btn-primary py-3 px-5 animated  mw-100 h-auto slideInLeft">Read More</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="owl-carousel-item position-relative" data-dot="<img src='img/carousel-3.jpg'>">
-                <img class="img-fluid" src="img/enterprenure.webp" alt="">
+            <div class="owl-carousel-item position-relative" data-dot="<img src='img/carousel-3.jpg'alt=''>">
+                <img class="img-fluid mw-100  " src="img/Slider-img2.webp" alt="">
                 <div class="owl-carousel-inner">
                     <div class="container">
                         <div class="row justify-content-start">
                             <div class="col-10 col-lg-8">
                                 <h1 class="display-1 text-white animated slideInDown">Aligning your Registeration Process Ease</h1> 
-                                <a href="" class="btn btn-primary py-3 px-5 animated slideInLeft">Read More</a>
+                                <a  href="#"  aria-label="More to know"class="btn btn-primary py-3 px-5 animated mw-100 h-auto slideInLeft">Read More</a>
                             </div>
                         </div>
                     </div>
@@ -163,7 +158,21 @@
         </div>
     </div>
     <!-- Carousel End -->
-
+    <div class="container-fluid px-4 py-5 bg-dark ">
+        <!-- <img class="img-fluid mw-100  " src="img/Slider-img2.webp" alt=""> -->
+        <h1 class="text-white display-1 "><span class="text-white">White</span><span class="text-primary">Worth</span> </h1>
+        <ul class="text-white fw-bold list-unstyled">
+            <li>Bank Account Assistance </li>
+            <li>Hassle Free Business Setup </li>
+            <li>Free Lifetime Visa For Investors</li>
+            <li>100% Ownership of Your Business </li>
+            <li> Highly Cost-Effective Business Setup</li>
+        </ul>
+        <a  href="#"  aria-label="More to know" 
+        class="btn btn-primary py-3 px-5 animated mw-100 h-auto slideInLeft">Read More</a>
+        
+    </div>
+    
 
     <!-- Facts Start -->
     <div class="container-xxl py-5">
@@ -172,7 +181,7 @@
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="fact-item text-center bg-light h-100 p-5 pt-0">
                         <div class="fact-icon">
-                            <img src="img/iconssd/icon-2.png" alt="Icon">
+                            <img src="img/iconssd/icon-2.png"loading="lazy" alt="Icon">
                         </div>
                         <h3 class="mb-3">Design Approach</h3>
                         <p class="mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
@@ -181,7 +190,7 @@
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="fact-item text-center bg-light h-100 p-5 pt-0">
                         <div class="fact-icon">
-                            <img src="img/iconssd/icon-3.png" alt="Icon">
+                            <img src="img/iconssd/icon-3.png"loading="lazy" alt="Icon">
                         </div>
                         <h3 class="mb-3">Innovative Solutions</h3>
                         <p class="mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
@@ -190,7 +199,7 @@
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="fact-item text-center bg-light h-100 p-5 pt-0">
                         <div class="fact-icon">
-                            <img src="img/iconssd/icon-4.png" alt="Icon">
+                            <img src="img/iconssd/icon-4.png"loading="lazy" alt="Icon">
                         </div>
                         <h3 class="mb-3">Project Management</h3>
                         <p class="mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
@@ -208,8 +217,8 @@
             <div class="row g-5">
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
                     <div class="about-img">
-                        <img class="img-fluid" src="img/about-2.jpg" alt="">
-                        <img class="img-fluid"  style="object-fit: cover; object-view-box: inset(0% 0% 8% 16%);"src="img/people-meeting-seminar-office-concept.webp" alt="">
+                        <img class="img-fluid" src="img/testi-side-img.png"loading="lazy" alt="">
+                        <img class="img-fluid"  style="object-fit: cover; object-view-box: inset(0% 0% 8% 16%);"src="img/team-1.jpg"loading="lazy" alt="">
                     </div>
                 </div>
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
@@ -230,7 +239,7 @@
                             <h3 class="mb-0">Experience</h3>
                         </div>
                     </div>
-                    <a class="btn btn-primary py-3 px-5" href="">Read More</a>
+                    <a class="btn btn-primary py-3 px-5"  href="#"  aria-label="More to know">Read More</a>
                 </div>
             </div>
         </div>
@@ -249,69 +258,69 @@
             <div class="row g-4">
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="service-item d-flex position-relative text-center h-100">
-                        <img class="bg-img" src="img/service-1.jpg" alt="">
+                        <img class="bg-img" src="img/service-1.jpg"loading="lazy" alt="">
                         <div class="service-text p-5">
-                            <img class="mb-4" src="img/iconssd/icon-5.png" alt="Icon">
+                            <img class="mb-4" src="img/iconssd/icon-5.png"loading="lazy" alt="Icon">
                             <h3 class="mb-3">Commitment</h3>
-                            <p class="mb-4">Uprightness and Transparency are the pillars of our organization. This includes a no quibble cancellation policy if our services do not meet our promises.</p>
-                            <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Read More</a>
+                            <p class="mb-4">Uprightness and Transparency are the pillars of our organization. This includes a no quibble cancellation policy if our services do not meet our promises. </p>
+                            <a class="btn"  href="#"  aria-label="More to know"><i class="fa fa-plus text-primary me-3"></i>Read More</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="service-item d-flex position-relative text-center h-100">
-                        <img class="bg-img" src="img/service-2.jpg" alt="">
+                        <img class="bg-img" src="img/service-2.jpg"loading="lazy" alt="">
                         <div class="service-text p-5">
-                            <img class="mb-4" src="img/iconssd/icon-6.png" alt="Icon">
+                            <img class="mb-4" src="img/iconssd/icon-6.png"loading="lazy" alt="Icon">
                             <h3 class="mb-3">Prompt Solution</h3>
                             <p class="mb-4">We understand our client’s requirements and provide ready solution to it.
                                 Our financial experts are someone with whom you can always contact.</p>
-                            <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Read More</a>
+                            <a class="btn"  href="#"  aria-label="More to know"><i class="fa fa-plus text-primary me-3"></i>Read More</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="service-item d-flex position-relative text-center h-100">
-                        <img class="bg-img" src="img/service-3.jpg" alt="">
+                        <img class="bg-img" src="img/service-3.jpg"loading="lazy" alt="">
                         <div class="service-text p-5">
-                            <img class="mb-4" src="img/iconssd/icon-7.png" alt="Icon">
+                            <img class="mb-4" src="img/iconssd/icon-7.png"loading="lazy" alt="Icon">
                             <h3 class="mb-3">Virtual Service Provider</h3>
                             <p class="mb-4">Outsourcing your accounts to an expert takes away the stress of managing process and compliance.</p>
-                            <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Read More</a>
+                            <a class="btn"  href="#"  aria-label="More to know"><i class="fa fa-plus text-primary me-3"></i>Read More</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="service-item d-flex position-relative text-center h-100">
-                        <img class="bg-img" src="img/service-4.jpg" alt="">
+                        <img class="bg-img" src="img/service-2.jpg"loading="lazy" alt="">
                         <div class="service-text p-5">
-                            <img class="mb-4" src="img/iconssd/icon-8.png" alt="Icon">
+                            <img class="mb-4" src="img/iconssd/icon-8.png"loading="lazy" alt="Icon">
                             <h3 class="mb-3">Dedicated Squad</h3>
                             <p class="mb-4">Highly skilled and experienced team who you and your stakeholders can trust to give the level of assurance needed to grow sustainably whilst exploiting the opportunities presented by an expanding risk landscape.</p>
-                            <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Read More</a>
+                            <a class="btn"  href="#"  aria-label="More to know"><i class="fa fa-plus text-primary me-3"></i>Read More</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="service-item d-flex position-relative text-center h-100">
-                        <img class="bg-img" src="img/service-5.jpg" alt="">
+                        <img class="bg-img" src="img/service-5.jpg"loading="lazy" alt="">
                         <div class="service-text p-5">
-                            <img class="mb-4" src="img/iconssd/icon-9.png" alt="Icon">
+                            <img class="mb-4" src="img/iconssd/icon-9.png"loading="lazy" alt="Icon">
                             <h3 class="mb-3">Innovation</h3>
                             <p class="mb-4">A forward-looking approach in which we incorporate the new tools and
                                 technology which is informed by our leading thinkers and generates deep insight.</p>
-                            <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Read More</a>
+                            <a class="btn"  href="#"  aria-label="More to know"><i class="fa fa-plus text-primary me-3"></i>Read More</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="service-item d-flex position-relative text-center h-100">
-                        <img class="bg-img" src="img/service-6.jpg" alt="">
+                        <img class="bg-img" src="img/service-6.jpg"loading="lazy" alt="">
                         <div class="service-text p-5">
-                            <img class="mb-4" src="img/iconssd/icon-10.png" alt="Icon">
+                            <img class="mb-4" src="img/iconssd/icon-10.png"loading="lazy" alt="Icon">
                             <h3 class="mb-3">Worthwhile</h3>
                             <p class="mb-4">As our name suggests Whiteworth, we offer worthwhile services in addition to providing service guarantee and adding value to our offerings.</p>
-                            <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Read More</a>
+                            <a class="btn"  href="#"  aria-label="More to know"><i class="fa fa-plus text-primary me-3"></i>Read More</a>
                         </div>
                     </div>
                 </div>
@@ -332,7 +341,7 @@
                     <div class="row g-4">
                         <div class="col-12">
                             <div class="d-flex align-items-start">
-                                <img class="flex-shrink-0" src="img/iconssd/icon-2.png" alt="Icon">
+                                <img class="flex-shrink-0" src="img/iconssd/icon-2.png"loading="lazy" alt="Icon">
                                 <div class="ms-4">
                                     <h3>Design Approach</h3>
                                     <p class="mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
@@ -341,7 +350,7 @@
                         </div>
                         <div class="col-12">
                             <div class="d-flex align-items-start">
-                                <img class="flex-shrink-0" src="img/iconssd/icon-3.png" alt="Icon">
+                                <img class="flex-shrink-0" src="img/iconssd/icon-3.png"loading="lazy" alt="Icon">
                                 <div class="ms-4">
                                     <h3>Innovative Solutions</h3>
                                     <p class="mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
@@ -350,7 +359,7 @@
                         </div>
                         <div class="col-12">
                             <div class="d-flex align-items-start">
-                                <img class="flex-shrink-0" src="img/iconssd/icon-4.png" alt="Icon">
+                                <img class="flex-shrink-0" src="img/iconssd/icon-4.png"loading="lazy" alt="Icon">
                                 <div class="ms-4">
                                     <h3>Project Management</h3>
                                     <p class="mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
@@ -361,8 +370,8 @@
                 </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="feature-img">
-                        <img class="img-fluid" src="img/enterprenure.webp" alt="">
-                        <img class="img-fluid"  style="object-fit: cover; object-view-box: inset(0% 0% 8% 16%);" src="img/people-meeting-seminar-office-concept.webp" alt="">
+                        <img class="img-fluid" src="img/slider-img.webp"loading="lazy" alt="">
+                        <img class="img-fluid"  style="object-fit: cover; object-view-box: inset(0% 0% 8% 16%);" src="img/intro.webp" class="center center"loading="lazy" alt="">
                     </div>
                 </div>
             </div>
@@ -402,7 +411,7 @@
                                 <div class="col-md-6" style="min-height: 350px;">
                                     <div class="position-relative h-100">
                                         <img class="position-absolute img-fluid w-100 h-100" src="img/slider-img.webp"
-                                            style="object-fit: cover;" alt="">
+                                            style="object-fit: cover;"loading="lazy" alt="">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
@@ -411,7 +420,7 @@
                                     <p><i class="fa fa-check text-primary me-3"></i>Design Approach</p>
                                     <p><i class="fa fa-check text-primary me-3"></i>Innovative Solutions</p>
                                     <p><i class="fa fa-check text-primary me-3"></i>Project Management</p>
-                                    <a href="" class="btn btn-primary py-3 px-5 mt-3">Read More</a>
+                                    <a  href="#"  aria-label="More to know" class="btn btn-primary py-3 px-5 mt-3">Read More</a>
                                 </div>
                             </div>
                         </div>
@@ -420,7 +429,7 @@
                                 <div class="col-md-6" style="min-height: 350px;">
                                     <div class="position-relative h-100">
                                         <img class="position-absolute img-fluid w-100 h-100" src="img/enterprenure.webp"
-                                            style="object-fit: cover;" alt="">
+                                            style="object-fit: cover;"loading="lazy" alt="">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
@@ -429,7 +438,7 @@
                                     <p><i class="fa fa-check text-primary me-3"></i>Design Approach</p>
                                     <p><i class="fa fa-check text-primary me-3"></i>Innovative Solutions</p>
                                     <p><i class="fa fa-check text-primary me-3"></i>Project Management</p>
-                                    <a href="" class="btn btn-primary py-3 px-5 mt-3">Read More</a>
+                                    <a  href="#"  aria-label="More to know" class="btn btn-primary py-3 px-5 mt-3">Read More</a>
                                 </div>
                             </div>
                         </div>
@@ -438,7 +447,7 @@
                                 <div class="col-md-6" style="min-height: 350px;">
                                     <div class="position-relative h-100">
                                         <img class="position-absolute img-fluid w-100 h-100" src="img/private-limited-to-public-limited-500-700.webp"
-                                            style="object-fit: cover;" alt="">
+                                            style="object-fit: cover;"loading="lazy" alt="">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
@@ -447,7 +456,7 @@
                                     <p><i class="fa fa-check text-primary me-3"></i>Design Approach</p>
                                     <p><i class="fa fa-check text-primary me-3"></i>Innovative Solutions</p>
                                     <p><i class="fa fa-check text-primary me-3"></i>Project Management</p>
-                                    <a href="" class="btn btn-primary py-3 px-5 mt-3">Read More</a>
+                                    <a  href="#"  aria-label="More to know" class="btn btn-primary py-3 px-5 mt-3">Read More</a>
                                 </div>
                             </div>
                         </div>
@@ -456,7 +465,7 @@
                                 <div class="col-md-6" style="min-height: 350px;">
                                     <div class="position-relative h-100">
                                         <img class="position-absolute img-fluid w-100 h-100" src="img/project-2 (2).jpg"
-                                            style="object-fit: cover;" alt="">
+                                            style="object-fit: cover;"loading="lazy" alt="">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
@@ -465,7 +474,7 @@
                                     <p><i class="fa fa-check text-primary me-3"></i>Design Approach</p>
                                     <p><i class="fa fa-check text-primary me-3"></i>Innovative Solutions</p>
                                     <p><i class="fa fa-check text-primary me-3"></i>Project Management</p>
-                                    <a href="" class="btn btn-primary py-3 px-5 mt-3">Read More</a>
+                                    <a  href="#"  aria-label="More to know" class="btn btn-primary py-3 px-5 mt-3">Read More</a>
                                 </div>
                             </div>
                         </div>
@@ -488,11 +497,11 @@
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="team-item position-relative">
                         <div class="position-relative">
-                            <img class="img-fluid" src="img/team-1.jpg" alt="">
+                            <img class="img-fluid" src="img/team-1.jpg"loading="lazy" alt="">
                             <div class="team-social text-center">
-                                <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
+                                <a class="btn btn-square"  href="#"  aria-label="More to know"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square"  href="#"  aria-label="More to know"><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square"  href="#"  aria-label="More to know"><i class="fab fa-instagram"></i></a>
                             </div>
                         </div>
                         <div class="bg-light text-center p-4">
@@ -504,11 +513,11 @@
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="team-item position-relative">
                         <div class="position-relative">
-                            <img class="img-fluid" src="img/team-2.jpg" alt="">
+                            <img class="img-fluid" src="img/team-2.jpg"loading="lazy" alt="">
                             <div class="team-social text-center">
-                                <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
+                                <a class="btn btn-square"  href="#"  aria-label="More to know"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square"  href="#"  aria-label="More to know"><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square"  href="#"  aria-label="More to know"><i class="fab fa-instagram"></i></a>
                             </div>
                         </div>
                         <div class="bg-light text-center p-4">
@@ -520,11 +529,11 @@
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="team-item position-relative">
                         <div class="position-relative">
-                            <img class="img-fluid" src="img/team-3.jpg" alt="">
+                            <img class="img-fluid" src="img/team-3.jpg"loading="lazy" alt="">
                             <div class="team-social text-center">
-                                <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
+                                <a class="btn btn-square"  href="#"  aria-label="More to know"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square"  href="#"  aria-label="More to know"><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square"  href="#"  aria-label="More to know"><i class="fab fa-instagram"></i></a>
                             </div>
                         </div>
                         <div class="bg-light text-center p-4">
@@ -536,11 +545,11 @@
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
                     <div class="team-item position-relative">
                         <div class="position-relative">
-                            <img class="img-fluid" src="img/team-4.jpg" alt="">
+                            <img class="img-fluid" src="img/team-4.jpg"loading="lazy" alt="">
                             <div class="team-social text-center">
-                                <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
+                                <a class="btn btn-square"  href="#"  aria-label="More to know"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square"  href="#"  aria-label="More to know"><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square"  href="#"  aria-label="More to know"><i class="fab fa-instagram"></i></a>
                             </div>
                         </div>
                         <div class="bg-light text-center p-4">
@@ -643,18 +652,20 @@
                 <h1 class="display-5 mb-4">Thousands Of Customers Who Trust Us And Our Services</h1>
             </div>
             <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
-                <div class="testimonial-item text-center" data-dot="<img class='img-fluid' src='img/testimonial-1.jpg' alt=''>">
+                <div class="testimonial-item text-center" data-dot="<img class='img-fluid' src='img/testimonial-1.jpg' loading='lazy' alt=''>">
                     <p class="fs-5">Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
                     <h3>Client Name</h3>
                     <span class="text-primary">Profession</span>
                 </div>
-                <div class="testimonial-item text-center" data-dot="<img class='img-fluid' src='img/testimonial-2.jpg' alt=''>">
+                <div class="testimonial-item text-center" data-dot="<img class='img-fluid' src='img/testimonial-2.jpg'loading='lazy' alt=''>">
                     <p class="fs-5">Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
                     <h3>Client Name</h3>
                     <span class="text-primary">Profession</span>
                 </div>
-                <div class="testimonial-item text-center" data-dot="<img class='img-fluid' src='img/testimonial-3.jpg' alt=''>">
-                    <p class="fs-5">Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
+                <div class="testimonial-item text-center" data-dot="<img class='img-fluid' src='img/testimonial-3.jpg'loading='lazy' alt=''>">
+                    <p class="fs-5">Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.
+                        
+                    </p>
                     <h3>Client Name</h3>
                     <span class="text-primary">Profession</span>
                 </div>
@@ -673,7 +684,7 @@
                         class="d-flex flex-column align-items-center justify-content-center text-center h-100 bg-gradient p-4">
                         <a href="index.html" class="navbar-brand">
                             <h1 class="m-0 text-white"> <img  class="rounded-circle"
-                                src="img/images-120x1203.png" width="60" height="60" alt=""> Whiteworth</h1>
+                                src="img/logo120.png.png" width="80" height="80"loading="lazy" alt=""> Whiteworth</h1>
                         </a>
                         <p class="mt-3 mb-4">Whiteworth was founded on the principle that sophisticated legal and
                             taxation services should be simple, modern, and inexpensive. We can serve our clients
@@ -791,23 +802,23 @@
                                     aria-label="instagram"><i class="fab fa-instagram fw-normal"></i></a>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-12 pt-5 mb-5">
+                        <div class="col-lg-7 col-md-12 pt-5 mb-5">
                             <div class="section-title section-title-sm position-relative pb-3 mb-4">
                                 <h3 class="text-light mb-0">Location</h3>
                             </div>
 
-                            <div class="link-animated d-flex flex-column justify-content-start">
-                                <!-- <iframe
+                            <div class="link-animated d-flex flex-column justify-content-start w-100">
+                                <iframe title="maps"
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3499.6768508825953!2d77.12176301456115!3d
                             28.699311687807384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d03c53679bedb%3A0x3624ba574fcc7425!2
                            sLegal%20Raasta%20Technologies%20Private%20Limited!5e0!3m2!1sen!2sin!4v1676637382453!5m2!1sen!2sin"
-                                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                                class="w-100 h-100" style="border:0;" allowfullscreen="" loading="lazy"
                                 referrerpolicy="no-referrer-when-downgrade">
-                            </iframe> -->
-                                <a
+                            </iframe>
+                                <!-- <a
                                     href="https://www.google.com/maps/place/Legal+Raasta+Technologies+Private+Limited/@28.699307,77.1170229,16z/data=!4m10!1m2!2m1!1sLegalRaasta+Technologies+Pvt+Ltd!3m6!1s0x390d03c53679bedb:0x3624ba574fcc7425!8m2!3d28.699307!4d77.1239517!15sCiBMZWdhbFJhYXN0YSBUZWNobm9sb2dpZXMgUHZ0IEx0ZCIDiAEBkgEObGVnYWxfc2VydmljZXPgAQA!16s%2Fg%2F11c0xvwdmk"><img
-                                        src="img/map.webp" aria-label="Maps" loading="lazy" alt="map"
-                                        style="width:20rem;height:18rem;"></a>
+                                        src="img/map.webp" aria-label="Maps" loading="lazy"loading="lazy" alt="map" class="w-100 h-100"
+                                        ></a> -->
                             </div>
                         </div>
 
@@ -830,7 +841,7 @@
 
 
     <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top" aria-label="Back to top"><i class="fa fa-arrow-up fs-3"></i></a>
 
 
     <!-- JavaScript Libraries -->
@@ -842,7 +853,7 @@
     <script src="lib/counterup/counterup.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
     <script src="lib/tempusdominus/js/moment.min.js"></script>
-    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <!-- <script src="lib/tempusdominus/js/moment-timezone.min.js"></script> -->
     <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
 
     <!-- Template Javascript -->
