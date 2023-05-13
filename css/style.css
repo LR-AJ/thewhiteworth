@@ -4,6 +4,9 @@
     --light: #F8F8F8;
     --dark: #252525;
 }
+.text-color>a{
+    color:var(--dark) !important;
+}
 
 h1,
 h2,
@@ -151,6 +154,10 @@ h6,
         transition: .5s;
         opacity: 0;
     }
+    .navbar .nav-item:hover .dropdown-menu {
+        transform: translate(-50px ,0px) !important;
+    }
+    
 
     .navbar .nav-item:hover .dropdown-menu {
         transform: rotateX(0deg);
